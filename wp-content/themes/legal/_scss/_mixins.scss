@@ -1,0 +1,32 @@
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin btn($color:#ccc) {
+  @include radius($globalRadius);
+  background-color: $color;
+  padding: 8px 15px;
+  border: 0px solid #000;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  &:hover {
+    background-color: darken($color, 15);
+    text-decoration: none;
+  }
+
+}
+
+@mixin alert($color) {
+  @include radius($globalRadius);
+  background-color: $color;
+  padding: 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}

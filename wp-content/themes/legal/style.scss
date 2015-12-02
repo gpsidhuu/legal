@@ -1,0 +1,22 @@
+/*
+Theme Name: LegaLamp
+*/
+html {
+  font-size: 16px;
+}
+
+* {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@import "_scss/vars";
+@import "_scss/mixins";
+@import "_scss/reboot";
+@import "_scss/typography";
+@import "_scss/header";
+@import "_scss/login";
+@import "_scss/orSep";

@@ -1,0 +1,9 @@
+.or-sep {
+  &:before {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #000;
+    left: 50%;
+  }
+}

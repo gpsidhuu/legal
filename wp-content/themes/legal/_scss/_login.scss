@@ -1,0 +1,73 @@
+.get-started {
+  text-align: center;
+
+  span {
+    color: #ff3500;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+
+#wp-submit {
+  @include btn(#fe0133);
+  color: #ffffff;
+}
+
+.btn {
+  @include btn()
+}
+
+.red-alert {
+  @include alert(#b21700)
+}
+
+form {
+  p {
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+}
+
+#loginform {
+  .login-username, .login-password {
+    position: relative;
+    @include radius($globalRadius);
+    border: 1px solid $fieldBorder;
+    margin-bottom: 10px;
+    label {
+      position: absolute;
+      opacity: 0;
+      font-size: 12px;
+      left: 10px;
+      top: 6px;
+      color: #bebebe;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    &.is-active {
+      label {
+        opacity: 1;
+      }
+      input {
+        padding-top: 20px;
+      }
+    }
+    &.is-focus {
+      border-color: #008fff;
+
+      input {
+        color: #008fff;
+      }
+    }
+
+  }
+
+  input[type=text],
+  input[type=password] {
+    font-size: 14px;
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+  }
+}
