@@ -19,6 +19,26 @@
                 $(this).parent().removeClass('is-active')
         });
         ////  FORM PROCESS  ////
+        function startAjax($this) {
+            var $btn = $('button[type="submit"]', $this);
+            submitBtnText = $btn.text();
+            $btn.text('Please Wait...');
+        }
+
+        function stopAjax($this) {
+            var $btn = $('button[type="submit"]', $this);
+            $btn.text(submitBtnText);
+        }
+
+        function isJson(str) {
+            try {
+                JSON.parse(str);
+            } catch (e) {
+                return false;
+            }
+            return true;
+        }
+
         var formErrors;
         var $ajaxForm = $('.xsAjax');
         $ajaxForm.append('<div class="row"><div class="col-sm-12"><div class="formErrors"></div></div></div>');
