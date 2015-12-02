@@ -4,6 +4,10 @@
   border-radius: $radius;
 }
 
+@mixin test() {
+  background: #000;
+}
+
 @mixin btn($color:#ccc) {
   @include radius($globalRadius);
   background-color: $color;
