@@ -29,7 +29,6 @@ class xsFormProcess
 
     function __construct()
     {
-        error_reporting('E_ALL ~E_WARNING ~E_NOTICE'); // TODO: Error reporting here
         $this->current_action = trim($_POST['action']);
         //
         //if ($_POST)

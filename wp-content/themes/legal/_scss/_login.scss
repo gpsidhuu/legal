@@ -28,6 +28,58 @@ form {
   }
 }
 
+.login-remember, .login-submit {
+  width: 50%;
+  float: left;
+}
+
+.login-submit {
+  text-align: right;
+}
+
+@mixin social-btn($color) {
+  padding: 15px 15px 15px 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $color;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  width: (100% - 4% )/3;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  i {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 13px;
+    height: 100%;
+    width: 40px;
+    left: 0;
+    top: 0;
+    background-color: darken($color, 5);
+  }
+  &:hover {
+    background-color: lighten($color, 10);
+
+  }
+}
+
+.social-btn-fb {
+  @include social-btn(#0047ac);
+}
+
+.social-btn-tw {
+  @include social-btn(#07c6df);
+}
+
+.social-btn-gp {
+  @include social-btn(#d31b00);
+  margin-right: 0;
+}
+
+
 #loginform {
   .login-username, .login-password {
     position: relative;
@@ -71,3 +123,5 @@ form {
     padding: 10px;
   }
 }
+
+

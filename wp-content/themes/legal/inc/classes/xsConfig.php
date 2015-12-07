@@ -8,15 +8,15 @@ class xsConfig {
 				"enabled" => TRUE,
 				"scope"   => "https://www.googleapis.com/auth/userinfo.email", // optional
 				"keys"    => array(
-					"id"     => "759671282461-t4fh7uj0dnh8mcgdqsg6mvss0kg721dk.apps.googleusercontent.com",
-					"secret" => "ebIFn0Ho2lQO9T1E6EcL8VYL"
+					"id"     => "762748493597-jbbiku65vv3dt90bkqjdtcd89pji81o6.apps.googleusercontent.com",
+					"secret" => "dKXFHMUuJE2hCnXp9x21vl-o"
 				),
 			),
 			"Facebook" => array(
 				"enabled"        => TRUE,
 				"keys"           => array(
-					"id"     => "1644538185807392",
-					"secret" => "22fd28a4bcbf76920871c63206a17f9f"
+					"id"     => "1041351295889619",
+					"secret" => "e91638cc94bf6839cc1967ec0ac851ee"
 				),
 				"scope"          => "email", // optional
 				"trustForwarded" => FALSE
@@ -24,8 +24,8 @@ class xsConfig {
 			"Twitter"  => array(
 				"enabled"      => TRUE,
 				"keys"         => array(
-					"key"    => "fzjMLUUHQn22PlLYIAJDHEjP4",
-					"secret" => "kTBMcvPgkkfHpjjqH8DPuNOD77vsDOIn1HJgYNlWiJrqNNjArI"
+					"key"    => "UklbYcoSBA1L2GmJlbpXEVVYe",
+					"secret" => "InwOGiFyS2F2m65vfcOnJwrAbn8DDIhHWA4wjsJ4j2lXcZAzra"
 				),
 				"includeEmail" => FALSE
 			),
@@ -33,4 +33,13 @@ class xsConfig {
 		"debug_mode" => FALSE,
 		"debug_file" => "",
 	);
+
+	/**
+	 * @return array
+	 */
+	public static function getSocialConfig() {
+		return self::$social_config;
+	}
+
+
 }

@@ -41,6 +41,18 @@
     text-decoration: none;
   }
 
+  &.icon {
+    padding-left: 48px;
+    i {
+      position: absolute;
+      height: 100%;
+      width: 2.5rem;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
 }
 
 @mixin alert($color) {
@@ -49,4 +61,5 @@
   padding: 15px;
   color: #ffffff;
   margin-bottom: 20px;
+
 }
