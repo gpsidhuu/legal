@@ -73,6 +73,15 @@ function template_404( $template ) {
 		case 'social-callback':
 			$template = dirname( __FILE__ ) . '/_social_Callback.php';
 			break;
+		case 'complete-your-profile':
+			add_filter( 'body_class', function ( $classes ) {
+				$classes[] = 'page-template-tpl-login ';
+
+				return $classes;
+			} );
+			add_filter( 'wp_title', function () { return '-Complete Profile'; }, 100 );
+			$template = dirname( __FILE__ ) . '/_complete-profile.php';
+			break;
 	}
 
 	return $template;
