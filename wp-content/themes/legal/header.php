@@ -23,7 +23,7 @@
 						<a href="">Browse</a>
 					</li>
 					<li>
-						<a href="">How it work</a>
+						<a href="">How it works</a>
 					</li>
 				</ul>
 				<ul class="user-menu">
@@ -34,7 +34,7 @@
 						<a href="">Signup</a>
 					</li>
 					<li>
-						<a href="" id="offer-service">Offer Legal Services</a>
+						<a href="" id="offer-service">Are you a Lawyer?</a>
 					</li>
 				</ul>
 			</div>
