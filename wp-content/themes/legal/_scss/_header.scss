@@ -4,14 +4,65 @@ body {
   font-family: "Roboto"
 }
 
-header {
-  background-color: #fff;
-  border-bottom: 5px solid #121f1d;
-  padding: 10px;
+a {
+  text-decoration: none;
+  color: $primaryColor;
 }
 
-#logo {
-  img {
-    height: 60px;
+img {
+  vertical-align: middle;
+}
+header {
+  background-color: darken(#fff, 2);
+  height: 70px;
+  line-height: 70px;
+
+  a {
+    font-size: 0.9rem;
+    color: lighten(#000, 20);
+    &:hover {
+      color: #08c3ef;
+    }
   }
+  .user-menu {
+    float: right;
+    li {
+      float: left;
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.logo-menu {
+  float: left;
+  li {
+    float: left;
+    margin-right: 2rem;
+    text-transform: uppercase;
+
+  }
+}
+
+.header-search {
+  float: left;
+  margin-left: 10px;
+  input {
+    padding: 8px 10px;
+    border: 2px solid #ccc;
+  }
+
+}
+#logo {
+  float: left;
+  img {
+    height: 40px;
+  }
+}
+
+#offer-service {
+  @include outline-btn($primaryColor);
+}
+
+.content-wrapper {
+  padding-top: 40px;
 }

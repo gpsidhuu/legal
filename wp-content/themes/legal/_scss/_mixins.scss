@@ -4,26 +4,6 @@
   border-radius: $radius;
 }
 
-@mixin test2() {
-
-}
-
-@mixin test() {
-  background: #000;
-}
-
-@mixin test75() {
-
-}
-
-@mixin test4() {
-//testing hello
-}
-
-@mixin test5() {
-
-}
-
 @mixin btn($color:#ccc) {
   @include radius($globalRadius);
   background-color: $color;
@@ -55,6 +35,21 @@
 
 }
 
+@mixin outline-btn($color:#ccc) {
+  border: 2px solid $color;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: $color;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $color;
+  }
+}
 @mixin alert($color) {
   @include radius($globalRadius);
   background-color: $color;
