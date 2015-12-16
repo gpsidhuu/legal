@@ -10,7 +10,7 @@ new xsSetup();
 new xsFormProcess();
 add_action( 'get_header', '_init', 1 );
 function _init() {
-	$hybrid_auth = new Hybrid_Auth( xsConfig::$social_config );
+	$hybrid_auth = new Hybrid_Auth( xsConfig::getSocialConfig() );
 	if ( isset( $_GET['_login'] ) ) {
 		switch ( $_GET['_login'] ) {
 			case 'tw':
